@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Hello from home</h3>
+    <script>
+        // match for car and cart
+let match1 = /ca[rt]/
+console.log({ans1: match1.test('a car is faster than a cat')})
+
+// match pop or prop
+let match2 = /pr?op/
+console.log({ans2: match2.test('my pop didnt understand why i was passing prop to my react components')})
+
+// ferret, ferry or ferrari
+let match3 = /ferr(et|y|ari)/
+console.log({ans3: match3.test('He ride on a ferrari')})
+
+// any words ending with ious
+let match4 = /\w+ious/
+console.log({ans4: match4.test('banga is delicious')})
+
+// whitespace and comma, period, semicolon or colon
+let match5 = /\s[.,;:]/
+console.log({ans5: match5.test('hello my new madam .')})
+
+// word longer than six letters
+let match6 = /\w{7,}/
+console.log({ans6: match6.test('we are from the kpandaragi')})
+
+// a word without the letter e or E
+let match7 = /\b[^eE\s]+\b/
+console.log({ans7: match7.test('we are don')})
+
+// 
+
+    </script>
+</body>
+</html>
